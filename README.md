@@ -129,7 +129,3 @@ Moesif's hosted service is built to log and analyze millions of API requests so 
 Auth0 helps you to:
 
 * Add authentication with [multiple authentication sources](https://docs.auth0.com/identityproviders), either social like **Google, Facebook, Microsoft Account, LinkedIn, GitHub, Twitter, Box, Salesforce, amont others**, or enterprise identity systems like **Windows Azure AD, Google Apps, Active Directory, ADFS or any SAML Identity Provider**.
-
-## License
-
-This project is licensed under the MIT license. See the [LICENSE](LICENSE) file for more info.
