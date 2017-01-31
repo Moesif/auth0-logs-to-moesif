@@ -4,17 +4,18 @@
 
 [![Auth0 Extensions](http://cdn.auth0.com/extensions/assets/badge.svg)](https://sandbox.it.auth0.com/api/run/auth0-extensions/extensions-badge?webtask_no_cache=1)
 
-This extension will send/export your Auth0 logs to Moesif.
+This extension will send/export your Auth0 API logs and end-user profiles to Moesif.
 
 1. You may have to click the orange _Create Extension_ button and then enter the following GitHub Url: [https://github.com/Moesif/auth0-logs-to-moesif](https://github.com/Moesif/auth0-logs-to-moesif)
 
-2. Enter your MOESIF_APPLICATION_ID. You’ll find it under _Moesif Portal -> Settings -> App Setup Details_
+2. Enter your MOESIF_APPLICATION_ID. You can find your Application Id from [_Moesif Dashboard_](https://www.moesif.com/wrap) -> _Top Right Menu_ -> _Extensions Setup_ -> _Auth0 Extension_
 
-3. That's it. You should see your Auth0 logs show up in Moesif shortly.
+3. That's it! You should see your Auth0 logs show up in Moesif shortly.
 
-## Configure Webtask
+## Manual Install
 
-__For those who require a manual/local install outside of Auth0__
+### Configure Webtask
+__For those who require a manual/local install outside of the Auth0 environment__
 
 If you haven't configured Webtask on your machine run this first:
 
@@ -25,7 +26,7 @@ wt init
 
 > Requires at least node 0.10.40 - if you're running multiple version of node make sure to load the right version, e.g. "nvm use 0.10.40"
 
-## Deploy to Webtask.io
+### Deploy to Webtask.io
 
 To run it on a schedule (run every 5 minutes for example):
 
@@ -52,11 +53,8 @@ The following settings are optional:
 
 > You can get your Global Client Id/Secret here: https://auth0.com/docs/api/v1
 
-## Usage
 
-Go to the `search` section of your [Moesif](https://www.moesif.com) account and filter by tag `auth0`.
-
-## Filters
+### Filters
 
 The `LOG_LEVEL` can be set to (setting it to a value will also send logs of a higher value):
 
@@ -107,15 +105,9 @@ The `LOG_TYPES` filter can be set to:
 
 So for example, if I want to filter on a few events I would set the `LOG_TYPES` filter to: `sce,fce,scu,fcu`.
 
-## Issue Reporting
+## Issue reporting
 
-If you have found a bug or if you have a feature request, please report them at this repository issues section. Please do not report security vulnerabilities on the public GitHub issue tracker. The [Responsible Disclosure Program](https://auth0.com/whitehat) details the procedure for disclosing security issues.
-
-## Author
-
-[Moesif](https://www.moesif.com)
-
-Based on extension boilerplate provided by Auth0.
+If you have found a bug or if you have a feature request, please report them at this repository issues section. Please do not report security vulnerabilities on the public GitHub issue tracker.
 
 ## What is Moesif?
 
