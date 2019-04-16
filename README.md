@@ -2,7 +2,7 @@
 
 ## One Click Install for Auth0
 
-[![Auth0 Extensions](http://cdn.auth0.com/extensions/assets/badge.svg)](https://sandbox.it.auth0.com/api/run/auth0-extensions/extensions-badge?webtask_no_cache=1)
+[![Auth0 Extensions](https://cdn.auth0.com/extensions/assets/badge.svg)](https://sandbox.it.auth0.com/api/run/auth0-extensions/extensions-badge?webtask_no_cache=1)
 
 This extension will send/export your Auth0 API logs and end-user profiles to Moesif.
 
