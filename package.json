@@ -17,7 +17,7 @@
   },
   "homepage": "https://www.moesif.com",
   "dependencies": {
-    "async": "3.1.0",
+    "async": "3.2.2",
     "auth0": "2.20.0",
     "express": "4.17.1",
     "lru-memoizer": "^2.0.1",
