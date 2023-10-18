@@ -1,3 +1,11 @@
+NOTE: 
+
+This repo is deprecated, because Auth0 is moving to custom log stream webhook model. https://auth0.com/docs/customize/log-streams/custom-log-streams
+
+We have a pending ticket to move to that model. But is simple to convert Auth0 format to moesif event format. See specs here: https://www.moesif.com/docs/api?json#log-an-api-call 
+
+
+
 # Auth0 - Logs to Moesif
 
 ## One Click Install for Auth0
