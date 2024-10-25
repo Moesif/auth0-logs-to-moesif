@@ -12,7 +12,7 @@ module.exports = async (moesifApplicationId, auth0Events) => {
   // to moesif Action https://www.moesif.com/docs/api#actions
   const moesifActionEvents = auth0Events.map((item) => {
     const action = {
-      action_name: `${item.data.type} : Auth0`,
+      action_name: `${item.data.type}|auth0`,
       user_id: item.data.user_id,
       transaction_id: item.log_id,
       request: {
