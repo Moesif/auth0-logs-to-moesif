@@ -2,7 +2,7 @@
 
 [Moesif](https://www.moesif.com) is an API analytics and monetization service to grow your API products. As part of understanding end to end user journey, Moesif can injest Auth0 Events as well.
 
-This repo contains [instructions for setting up Auth0 Log Stream to Moesif](/integration/installation_guide.md) and code for the [webhook](/log-streams-webhook/)
+This repo contains [instructions for setting up Auth0 Log Stream to Moesif](/integration/installation_guide.md) and code for the [webhook](/log-streams-webhook/) that you will need to deploy as described in the instructions.
 
 ## What is Auth0?
 
