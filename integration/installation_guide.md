@@ -10,7 +10,7 @@ Deploy this integration to ship Auth0 events from your Auth0 account to Moesif u
 To configure the integration with Moesif:
 
 1. Create a Moesif Account if you haven't done so.
-2. Obtain the MOESIF APPLICATION ID through onboarding steps or goto Settings => Installation.
+2. Obtain your MOESIF APPLICATION ID through onboarding steps or under **Settings > Installation**.
 
 ## Setup & Deploy Webhook Service
 
