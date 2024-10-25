@@ -48,19 +48,19 @@ Deploy the webhook to a cloud service of your choice, and obtain the `host domai
 1. Locate the **Content Format** field, and select "JSON Array".
 1. Save the changes and create the stream by selecting **Save**.
 
-## Trouble Shoot: Check Your Moesif Account Event Stream for your data
+## Trouble Shoot:
 
-### in Auth0 Check your data:
+### In Auth0 check your data:
 
 1. Check the Dashboard **Logs > Search** screen to make sure the record is there.
 2. Check **Health** tab for stream and delivery attemped.
 
-### in Moesif Check your data:
+### In Moesif check your data:
 
 1. Go to your [Moesif Account](http://www.moesif.com)
 2. Click on New
 
-### Check your deployed webhook:
+### Check for errors in your deployed webhook:
 
 1. Set `DEBUG = true` in to see `console.log` to verify
    1. If your webhook service is receiving events from Auth0.
