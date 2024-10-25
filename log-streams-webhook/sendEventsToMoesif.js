@@ -1,5 +1,4 @@
 const axios = require("axios");
-const useragent = require("useragent");
 
 const moesifActionBatchEndpoint = `https://api.moesif.net/v1/actions/batch`;
 
