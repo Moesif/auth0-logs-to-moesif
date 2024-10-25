@@ -8,7 +8,7 @@ app.use(express.json());
 
 const DEBUG = false;
 
-app.post("/api/logs", async (req, res, next) => {
+app.post("/logs", async (req, res, next) => {
   const { body, headers } = req;
   if (!body || !Array.isArray(body)) {
     return res.sendStatus(400);
@@ -34,6 +34,11 @@ app.post("/api/logs", async (req, res, next) => {
 
     res.status(apiResponse.status).json(apiResponse.data);
   } catch (error) {
+
+    if (DEBUG) {
+      console.error('error sending events to Moesif', error);
+    }
+
     if (error.response) {
       // If the API responded with an error, mirror the status and error message
       res.status(error.response.status).json(error.response.data);

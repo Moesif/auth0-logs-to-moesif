@@ -14,7 +14,7 @@ module.exports = async (moesifApplicationId, auth0Events) => {
     const action = {
       action_name: `${item.data.type}|auth0`,
       user_id: item.data.user_id,
-      transaction_id: item.log_id,
+      transaction_id: item.data.log_id,
       request: {
         ip: item.data.ip,
         uri: `https://${process.env.AUTH0DOMAIN || "www"}.auth0.com`,
