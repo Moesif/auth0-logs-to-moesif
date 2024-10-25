@@ -37,7 +37,7 @@ Above should verify you are able to run the webhook, and see the event in your M
 
 Deploy the webhook to a cloud service of your choice, and obtain the `host domain`.
 
-## Add the Auth0 Custom Webhook stream
+## Add the Auth0 Custom Webhook Stream
 
 1. In your Auth0 Dashboard, navigate to **Monitoring > Streams**, and select **Create Stream**.
 1. From the **New Event Stream** listing, select **Custom Webhook**.
@@ -48,7 +48,7 @@ Deploy the webhook to a cloud service of your choice, and obtain the `host domai
 1. Locate the **Content Format** field, and select "JSON Array".
 1. Save the changes and create the stream by selecting **Save**.
 
-## Trouble Shoot:
+## Trouble Shoot
 
 ### In Auth0 check your data:
 
@@ -58,7 +58,7 @@ Deploy the webhook to a cloud service of your choice, and obtain the `host domai
 ### In Moesif check your data:
 
 1. Go to your [Moesif Account](http://www.moesif.com)
-2. Click on New
+2. Click on **Start New -> Event Stream** and verify the Auth0 event arrives.
 
 ### Check for errors in your deployed webhook:
 
