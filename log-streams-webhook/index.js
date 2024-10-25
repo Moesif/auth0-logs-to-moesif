@@ -27,7 +27,8 @@ app.post("/api/logs", async (req, res, next) => {
 
   try {
     if (moesifApplicationId.indexOf("Bearer ") === 0) {
-      moesifApplicationId = moesifApplicationId.replace("Bearer", "");
+      // strip off the "Bearer " if it has in the header.
+      moesifApplicationId = moesifApplicationId.replace("Bearer ", "");
     }
     const apiResponse = await sendEventsToMoesif(moesifApplicationId, body);
 
