@@ -28,7 +28,7 @@ $ curl \
   --header "Authorization: MOESIF_APPLICTION_ID" \
   --header "Content-Type: application/json" \
   --request POST \
-  --data '[{"data": {"type": "f", "description": "Test failure", "log_id": "abc1234567890"}}]' \
+  --data '[{"data": {"type": "f", "description": "Test failure", "log_id": "abc1234567890", "user_id": "testuser" }}]' \
   http://localhost:3050/logs
 
 ```
