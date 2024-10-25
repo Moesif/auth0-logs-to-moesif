@@ -1,4 +1,4 @@
-# Log Auth0 Evens to Moesif
+# Log Auth0 Event Stream to Moesif
 
 [Moesif](https://www.moesif.com) is an API analytics and monetization service to grow your API products. As part of understanding end to end user journey, Moesif can injest Auth0 Events as well.
 
