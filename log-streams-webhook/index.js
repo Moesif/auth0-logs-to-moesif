@@ -21,7 +21,9 @@ app.post("/logs", async (req, res, next) => {
   // the moesifApplicationId should be be used as the authorization configured in Auth0
   let moesifApplicationId = headers.authorization;
   if (DEBUG) {
-    console.log('moesifApplicationId', moesifApplicationId);
+    // Sanitize moesifApplicationId to prevent log injection
+    const sanitizedMoesifApplicationId = moesifApplicationId.replace(/\n|\r/g, "");
+    console.log('moesifApplicationId', sanitizedMoesifApplicationId);
     console.log('eventsReceived', body);
   }
 
