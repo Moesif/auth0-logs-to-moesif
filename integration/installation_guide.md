@@ -35,14 +35,14 @@ $ curl \
 
 Above should verify you are able to run the webhook, and see the event in your Moesif account.
 
-Deploy the webhook to a cloud service services, and obtain the `host domain`;
+Deploy the webhook to a cloud service of your choice, and obtain the `host domain`.
 
 ## Add the Auth0 Custom Webhook stream
 
 1. In your Auth0 Dashboard, navigate to **Monitoring > Streams**, and select **Create Stream**.
 1. From the **New Event Stream** listing, select **Custom Webhook**.
 1. Enter a **Name**, and select **Create**.
-1. Locate the **Payload URL** field, and enter `https://[host domain]/api/logs`.
+1. Locate the **Payload URL** field, and enter `https://[host domain]/logs`.
 1. For Authorization Token: use your MOESIF_APPLICATION_ID.
 1. Locate the **Content Type** field, and select "application/json".
 1. Locate the **Content Format** field, and select "JSON Array".
