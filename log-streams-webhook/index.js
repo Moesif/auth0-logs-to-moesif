@@ -6,6 +6,8 @@ const sendEventsToMoesif = require("./sendEventsToMoesif");
 const app = express();
 app.use(express.json());
 
+const DEBUG = false;
+
 app.post("/api/logs", async (req, res, next) => {
   const { body, headers } = req;
   if (!body || !Array.isArray(body)) {
@@ -18,6 +20,10 @@ app.post("/api/logs", async (req, res, next) => {
 
   // the moesifApplicationId should be be used as the authorization configured in Auth0
   let moesifApplicationId = headers.authorization;
+  if (DEBUG) {
+    console.log('moesifApplicationId', moesifApplicationId);
+    console.log('eventsReceived', body);
+  }
 
   try {
     if (moesifApplicationId.indexOf("Bearer ") === 0) {
