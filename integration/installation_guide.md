@@ -1,4 +1,4 @@
-Deploy this integration to ship Auth0 events from your Auth0 account to [[TODO: Your service name]] using custom log stream via webhooks.
+Deploy this integration to ship Auth0 events from your Auth0 account to Moesif using custom log stream via webhooks.
 
 ## Prerequisites
 
