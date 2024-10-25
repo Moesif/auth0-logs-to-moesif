@@ -51,7 +51,7 @@ app.post("/logs", async (req, res, next) => {
   }
 });
 
-const port = process.env.PORT || 3035;
+const port = process.env.PORT || 3050;
 http.createServer(app).listen(port, () => {
   console.log("Listening on port " + port);
 });

@@ -32,7 +32,9 @@ module.exports = async (moesifApplicationId, auth0Events) => {
   });
 
   return axios.post(moesifActionBatchEndpoint, moesifActionEvents, {
-    "Content-Type": "application/json",
-    "X-Moesif-Application-Id": moesifApplicationId,
+    headers: {
+      "Content-Type": "application/json",
+      "X-Moesif-Application-Id": moesifApplicationId,
+    },
   });
 };
