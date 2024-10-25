@@ -25,7 +25,7 @@ Listening on port 3050
 
 # Replace the Authorization header below with MOESIF_APPLICATION_ID
 $ curl \
-  --header "Authorization: MOESIF_APPLICTION_ID" \
+  --header "Authorization: MOESIF_APPLICATION_ID" \
   --header "Content-Type: application/json" \
   --request POST \
   --data '[{"data": {"type": "f", "description": "Test failure", "log_id": "abc1234567890", "user_id": "testuser" }}]' \
