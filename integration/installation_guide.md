@@ -3,7 +3,7 @@ Deploy this integration to ship Auth0 events from your Auth0 account to Moesif u
 ## Prerequisites
 
 1. An Auth0 account and tenant. [Sign up for free](https://auth0.com/signup).
-2. A Moesif account [Sign up for free](https://www.moesif.com)
+2. A Moesif account. [Sign up for free](https://www.moesif.com).
 
 ## Set up Moesif
 

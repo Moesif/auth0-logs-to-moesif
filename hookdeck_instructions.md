@@ -12,7 +12,7 @@ If you do not want to deploy your own webhook, you can also leverage one of the 
 POST https://api.moesif.net/v1/actions/batch
 ```
 
-### And transformation of request, just add below code:
+### Add transformation of request, use below code:
 
 ```javascript
 addHandler('transform', (request, context) => {
